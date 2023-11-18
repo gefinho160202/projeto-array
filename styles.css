@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(./img/hamburguer-explosivo-com-legumes-e-queijo-derretido-em-fundo-preto-generative-ai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.mascara-fundo {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.4) 50%, rgba(10, 12, 16, 0.78) 85%);
+    z-index: -1;
+
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+
+}
+
+
+header a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.logo {
+
+    z-index: 999;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    gap: 1.5rem;
+
+}
+
+#cardapio {
+    display: flex;
+}
+
+/* .image {
+    height: 400px;
+    width: 500px;
+    margin-left: 20px;
+    z-index: 999;
+    margin-top: 10px;
+
+} */
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+
+
+}
+
+
+.paragrafo {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #79cb15;
+    margin-top: 30%;
+}
+
+h2 {
+    color: #06f11a;
+}
+
+.container-buttons {
+    z-index: 2;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.container-buttons a {
+    background-color: #79cb15;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f1efef;
+    font-weight: bold;
+    cursor: pointer;
+    width: 110px;
+    z-index: 2;
+
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+
+ul {
+    z-index: 999;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+}
+
+li {
+    margin-top: 2rem;
+    border: 2px solid #8133ff;
+    border-radius: 5px;
+    padding: 5px;
+    height: 270px;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+img {
+    src: url(./img/x-salada-2.jpg);
+    width: 186px;
+    height: 186px;
+
+
+}
+
+p {
+    color: #ec2f0e;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.item-place {
+    font-weight: bold;
+    color: #06f11a;
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 1010px) {
+    header {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .paragrafo {
+
+        font-size: 1rem;
+        font-weight: 600;
+        margin-left: 50px;
+
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        gap: 2rem;
+
+    }
+
+    .logo {
+        font-size: 15px;
+        margin-top: 20px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 75px;
+    }
+
+
+    .paragrafo {
+        position: absolute;
+        top: 420px;
+        left: 60px;
+        margin-top: 20px;
+        margin-right: 80px;
+
+    }
+
+
+    ul {
+        margin-top: 250px;
+        grid-template-columns: 200px 200px;
+        gap: 7px;
+        display: grid;
+        justify-content: center;
+        margin-right: 14%;
+        margin-bottom: 10px;
+
+
+    }
+
+
+
+}
